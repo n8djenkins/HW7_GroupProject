@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ISMAREED</title>
+   <link rel="stylesheet" href="HEART STYLE SHEET">
+   <script>"LINK TO LOADING BAR JS FILE -- Start on line 198 and follow the code until line 220"</script>
+   <script>
+       //make this a linked js file as well
+       function trueLove()
+       {
+           /*
+           1. assign variables to the values of names and love phrase (sLovePhrase)
+           2. take out all of the spaces in these variables and make all letters .toLowerCase()
+           3. parse both names, looking for matching characters in the names and love phrase.
+               for each matching character, add 1 to iLoveCount variable
+           4. var iFactor = 1;
+           5. for each checked box, iFactor+= .25, last box - += .50
+           6. apply iPower expression
+           7. Based on this value, change percentage and bars in heart, and display message below
+           8. Hardcode expression to always display TRUE LOVE (e.g. "we just met")
+           */
+ 
+       }
+       function resetHeart()
+       {
+           /*
+           1. Reset heart to blank or empty
+           2. Uncheck all boxes
+           3. Clear all text
+           4. Put focus on love phrase
+           */
+       }
+   </script>
+</head>
+<body>
+   <form>
+       <h3>Welcome to BYU Information Systems' Dating Site</h3>
+       <label for="lovePhrase">What is the love phrase?</label>
+       <input type="text" name="lovePhrase" id="lovePhrase" placeholder="ex. we just met" autofocus>
+       <br><br>
+       <label for="lonelyPersonOne">What is the first lonely person's name?</label>
+       <input type="text" name="lonelyPersonOne" id="lonelyPersonOne">
+       <br><br>
+       <label for="lonelyPersonTwo">What is the second lonely person's name?</label>
+       <input type="text" name="lonelyPersonTwo" id="lonelyPersonTwo">
+       <br><br>
+       <input type="checkbox" name="compatibility" id="communication">
+       <label for="communication">We will communicate often</label>
+       <br><br>
+       <input type="checkbox" name="compatibility" id="selflessness">
+       <label for="selflessness">We will not be selfish</label>
+       <br><br>
+       <input type="checkbox" name="compatibility" id="service">
+       <label for="service">We will serve each other</label>
+       <br><br>
+       <input type="checkbox" name="compatibility" id="friendship">
+       <label for="friendship">We will be best friends</label>
+       <br><br>
+       <input type="checkbox" name="compatibility" id="faith">
+       <label for="faith">We will remember God</label>
+       <br><br>
+       <input type="button" value="Can you feel the love tonight?" id="trueLove" onclick="trueLove()">
+       <input type="button" value="Reset" id="resetHeart" onclick="resetHeart()">
+   </form>
+ 
+   <div id="loveHeart">
+       <p id="output"></p>
+   </div>
+   <!--Heart goes here:
+       Attributes heart needs:
+           Loading bars to fill up empty heart
+           Percent of love in center
+           Wording underneath:
+               # >= 100 ... Perfect Marriage
+               # >= 85 ... Get Married!
+               # >= 70 ... It might work
+               otherwise ... Keep looking!
+           This CSS:
+               div.LoveHeart
+               {
+ 
+               height: 5em;
+ 
+               position: relative
+ 
+               }
+ 
+              
+ 
+               div.LoveHeart p
+ 
+               {
+ 
+               margin: 0;
+ 
+               background: white;
+ 
+               color: red;
+ 
+               font-weight: bold;
+ 
+               font-size: 150%;
+ 
+               position: absolute;
+ 
+               top: 50%;
+ 
+               left: 50%;
+ 
+               margin-right: -50%;
+ 
+               transform: translate(-50%, -50%)
+              
+               }
+   -->
+ 
+</body>
+</html>
